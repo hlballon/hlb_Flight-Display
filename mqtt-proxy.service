@@ -1,0 +1,17 @@
+[Unit]
+Description=HLB MQTT Proxy
+After=network.target
+
+[Service]
+Type=simple
+User=hret
+WorkingDirectory=/home/hret/hlb_Flight-Display/mqtt-proxy
+Environment=MQTT_USER=your_user
+Environment=MQTT_PASS=your_password
+Environment=PORT=51884
+ExecStart=/usr/bin/node mqtt-proxy.js
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
