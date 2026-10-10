@@ -1,6 +1,6 @@
 # HLB Flight Display
 
-Web-basierte Flight-Display-Anwendung für Heißluftballons  4
+Web-basierte Flight-Display-Anwendung für Heißluftballons
 
 Migriert von Expo Go zu einer reinen React-App, betrieben auf einem reTerminal mit nginx und einem MQTT-Proxy.
 
